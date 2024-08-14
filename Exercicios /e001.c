@@ -18,7 +18,7 @@ int main(){
     for(int i=0; i<5; i++){
         printf("Digite dados do ponto %i\n \n", i+1);
         bd[i]=entrada();
-        system("cls");
+        system("clear");
     }
     
     // saida
@@ -39,5 +39,5 @@ Ponto entrada(){
 }
 
 void impressao(Ponto a){
-    printf("x: %i, y: %i", a.x, a.y);
+    printf("x: %i,\t y: %i\n", a.x, a.y);
 }
