@@ -1,10 +1,7 @@
-// Construa um programa que define um tipo novo de dados, para uma estrutura de um animal,
-// deverá conter atributos como: raça, cor, peso e sexo.  
-// E solicite ao usuário do programa 10 espécies e depois imprima em tela.  
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TAM 2
+#define TAM 10
 
 typedef struct animal {
     char raca[30], cor[20], sexo;
@@ -29,7 +26,7 @@ int main(void){
     fflush(stdin);
   }
 
-  printf("Raca\tCor\tSexo\tPeso\n")
+  printf("\nRaca\tCor\tSexo\tPeso\n")
   for(int i=0;i<TAM; i++){
     printf("%s\t%s\t%c\t%f\n", , &dados[i].raca, &dados[i].cor, &dados[i].sexo, &dados[i].peso);
   }
