@@ -1,25 +1,47 @@
-// Construa um programa que define um tipo novo de dados, para uma estrutura de um animal,
-// deverá conter atributos como: raça, cor, peso e sexo.  
-// E solicite ao usuário do programa 10 espécies e depois imprima em tela.  
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct animal {
-    char raca[30], cor[20], sexo;
-    float peso;
-} Animal;
+typedef struct peca{
+	int cod;
+	char nome[30], cor[30];
+	float peso, preco;
+}Peca;
 
-int main(void){
-    Animal dados;
-    
-    printf("Digite a raça do animal: \n");
-    gets(dados.raca);
-    printf("Digite a cor do animal: \n");
-    gets(dados.cor);
-    printf("Digite o sexo(F/M) e o peso do animal: \n");
-    scanf("%s %f", &dados.sexo, &dados.peso);
+Peca entrada(void);
+void saida(Peca a);
 
-    printf("Adivinhe\nAnimal da raca: %s, cor: %s, sexo: %s e o peso: %f", dados.raca, dados.cor, dados.sexo, dados.peso);
+int main(){
+//    Peca x;
+//    
+//   	x = entrada();
+//   	saida(x);
+
+	saida(entrada());
 
     return 0;
+}
+
+Peca entrada(void){
+	Peca a;
+	
+	printf("Digite o codigo: ");
+	scanf("%i",&a.cod);
+	fflush(stdin);
+	printf("Digite nome: ");
+	gets(a.nome);
+	fflush(stdin);
+	printf("Digite a cor: ");
+	gets(a.cor);
+	fflush(stdin);
+	printf("Digite o peso: ");
+	scanf("%f",&a.peso);
+	fflush(stdin);
+	printf("Digite o preco: ");
+	scanf("%f",&a.preco);
+	fflush(stdin);
+	
+	return a;	
+}
+void saida(Peca a){
+	printf("%i \t%s \t%s \t%f \t%f \n", a.cod, a.nome, a.cor, a.peso, a.preco);
 }
