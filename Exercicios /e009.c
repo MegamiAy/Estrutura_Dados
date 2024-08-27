@@ -22,11 +22,11 @@ int main(){
 	scanf("%i", &n2);	
 	
 	// processamento & saida
-	void soma(&n1, &n2, &R);
+	soma(&n1, &n2, &R);
 	printf("soma: %i\n", R);
-	void diferenca(&n1, &n2, &R);
+	diferenca(&n1, &n2, &R);
 	printf("diferenca: %i\n", R);
-	void multi(&a, &b, &R);
+	multi(&a, &b, &R);
 	printf("multiplicacao: %i\n", R);
 	
 	return 0;
@@ -44,3 +44,47 @@ void diferenca(int *a, int *b, int *r){
 void multi(int *a, int *b, int *r){
 	*r = *a * *b;
 }
+
+// Versao 2 (nomes vars diferente)
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <math.h>
+
+// void soma(int *a, int *b, int *r);
+// void diferenca(int *a, int *b, int *r);
+// void multi(int *a, int *b, int *r);
+
+// int main(){
+// 	// vars
+// 	int a, b, r;
+	
+// 	// entrada
+// 	printf("Digite um numero inteiro: ");
+// 	scanf("%i", &a);
+// 	printf("Digite outro numero inteiro: ");
+// 	scanf("%i", &b);	
+	
+// 	// processamento & saida
+// 	soma(&a, &b, &r);
+// 	printf("soma: %i\n", r);
+// 	diferenca(&a, &b, &r);
+// 	printf("diferenca: %i\n", r);
+// 	multi(&a, &b, &r);
+// 	printf("multiplicacao: %i\n", r);
+	
+// 	return 0;
+// }
+
+
+// void soma(int *a, int *b, int *r){
+// 	*r = *a + *b;
+// }
+
+// void diferenca(int *a, int *b, int *r){
+// 	*r = *a - *b;
+// }
+
+// void multi(int *a, int *b, int *r){
+// 	*r = *a * *b;
+// }
