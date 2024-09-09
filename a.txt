@@ -1,0 +1,122 @@
+chat gpt me diga  10 numeros de 0 a 99
+O ChatGPT disse:
+ChatGPT
+Claro! Aqui estão 10 números aleatórios entre 0 e 99:
+
+12, 37, 45, 68, 89, 23, 56, 74, 91, 8
+
+
+
+Você disse:
+agora embaralhe a ordem deles
+O ChatGPT disse:
+ChatGPT
+Claro! Aqui estão os números embaralhados:
+
+68, 12, 89, 37, 8, 56, 45, 23, 91, 74
+
+
+
+Você disse:
+agora coloque eles em ordem
+O ChatGPT disse:
+ChatGPT
+Claro! Aqui estão os números em ordem crescente:
+
+8, 12, 23, 37, 45, 56, 68, 74, 89, 91
+
+
+
+Você disse:
+ordenação de dados... construa um fluxograma do processo
+O ChatGPT disse:
+ChatGPT
+Para construir um fluxograma do processo de ordenação de dados, você pode seguir uma abordagem básica de ordenação. Um dos algoritmos de ordenação mais simples e conhecidos é o Bubble Sort, mas aqui vou descrever um fluxograma genérico que pode ser adaptado para diferentes algoritmos de ordenação.
+
+Aqui está um esboço do fluxograma para o processo de ordenação de dados:
+
+Início
+
+Começa o processo de ordenação.
+Entrada dos Dados
+
+Recebe a lista ou array de números a serem ordenados.
+Inicializar
+
+Define o estado inicial da ordenação. Por exemplo, para Bubble Sort, isso envolve definir o índice do primeiro elemento não ordenado.
+Comparar e Trocar
+
+Loop através da lista:
+Compare os elementos adjacentes (ou conforme o algoritmo específico).
+Se o elemento atual for maior que o próximo (ou não estiver na ordem correta conforme o algoritmo), troque-os.
+Verificar se Ordenado
+
+Verifica se toda a lista está ordenada. Para Bubble Sort, isso envolve verificar se houve troca em uma passagem. Se não houve troca, a lista está ordenada.
+Repetir
+
+Se a lista não estiver totalmente ordenada, repete o processo a partir do passo de comparação e troca, ajustando o intervalo conforme necessário.
+Saída dos Dados
+
+Exibe ou armazena a lista ordenada.
+Fim
+
+Conclui o processo de ordenação.
+Representação do Fluxograma
+Aqui está uma descrição visual simplificada dos blocos e setas que formariam o fluxograma:
+
+Início
+
+(Bloco de início)
+Entrada dos Dados
+
+(Bloco de entrada)
+Inicializar
+
+(Bloco de processo)
+Comparar e Trocar
+
+(Bloco de processo)
+Dentro deste bloco, pode haver um loop com a seguinte lógica:
+Comparar Elementos
+(Bloco de decisão: Se necessário trocar)
+Se sim, vá para "Trocar Elementos"
+Se não, continue o loop
+Trocar Elementos
+(Bloco de processo)
+Atualizar Estado
+(Bloco de processo)
+Verificar se Ordenado
+
+(Bloco de decisão)
+Se a lista estiver ordenada, vá para "Saída dos Dados"
+Se não, vá para "Comparar e Trocar"
+Saída dos Dados
+
+(Bloco de saída)
+Fim
+
+(Bloco de fim)
+Diagrama de Fluxo (Texto)
+css
+Copiar código
+[Início]
+     |
+[Entrada dos Dados]
+     |
+[Inicializar]
+     |
+[Comparar e Trocar]
+     |---[Comparar Elementos]
+     |          |
+     |    [Necessário Trocar?]
+     |          |-- Sim --> [Trocar Elementos] 
+     |          |-- Não 
+     |          |
+     |      [Atualizar Estado]
+     |
+[Verificar se Ordenado]
+     |--- [Ordenado?]
+     |        |-- Sim --> [Saída dos Dados]
+     |        |-- Não --> [Comparar e Trocar]
+     |
+[Fim]
